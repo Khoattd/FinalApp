@@ -19,7 +19,7 @@ body
  width:980px;
  margin:0px auto;
  padding:0px;
- height:85px;
+ height:50px;
 }
 #header li
 {
@@ -28,26 +28,27 @@ body
  text-align:left;
  color:white;
 }
-#header #sitename #login
-{
- margin-top:25px;
-}
-#header #sitename a
+
+#header > #sitename > a 
 {
  color:white;
  text-decoration:none;
  font-size:30px;
  font-weight:900;
+ margin-top: 50%;
+ 
+ padding-top: 20px;
 }
 #header form
 {
  margin-top:15px;
- float:right;
+ float:left;
 }
 #header form li
 {
  font-size:13px;
  margin-left:15px;
+ 
 }
 #header form li a
 {
@@ -58,7 +59,7 @@ body
 {
  margin-top:3px;
  margin-bottom:3px;
- width:150px;
+ width:500px;
  border:1px solid #08298A;
  height:25px;
  padding-left:3px;
@@ -134,7 +135,7 @@ padding-right: 10px;
  padding-bottom:5px;
 }
 
-#wrapper #div2 li input[type="text"]
+#wrapper #div2 li input[type="text"], #searchbar
 {
     
  width:70%;
@@ -177,16 +178,7 @@ padding-right: 10px;
  color:#2E2E2E;
  font-size:18px;
 }
-#wrapper #div2 #terms
-{
- color:#424242;
- font-size:11px;
-}
-#wrapper #div2 #terms a
-{
- display:inline;
- margin:0px;
-}
+
 #wrapper #div2 li input[type="submit"]
 {
 
