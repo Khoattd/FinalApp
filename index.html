@@ -11,14 +11,14 @@
  <form action="post">
  <li><input id="searchbar" type="text" name="something" placeholder="Search Photo / Album"></li>
 </form>
-<li> <a href="login.html"> <button id="LogButton" > Log in</button> </a></li>
+<li>  <button id="LogButton" onclick='document.getElementById("front").innerHTML = "Fotobook login"' > Log in</button> </li>
  
  
  </div>
 </div>
 
 <div id="wrapper">
-    <h1>Fotobook Signup </h1>
+    <h1 id="front">Fotobook Signup </h1>
 <div id="div2">
       
     <p>First Name</p> 
@@ -31,6 +31,17 @@
 <li><input type="password" placeholder="Password confirmation" maxlength="32" required></li>
 <li><input type="submit" value="Sign Up"></li>
 </div>
+<div id="div3">
+    <li><i class="fa fa-gamepad" ></i></li>
+    
+     
+    <li><input type="text" placeholder="email" maxlength="20" required></li>
+    
+    <li><input type="password" placeholder="Password" maxlength="32" required></li>
+    
+    <li><input type="submit" value="Sign Up"></li>
+    <li><a href="www.google.com.vn" id="forgot">Forgot password?</a></li>
+    </div>
 
 </div>
 
