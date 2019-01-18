@@ -11,7 +11,7 @@
  <form action="post">
  <li><input id="searchbar" type="text" name="something" placeholder="Search Photo / Album"></li>
 </form>
-<li>  <button id="LogButton" onclick='document.getElementById("front").innerHTML = "Fotobook login"' > Log in</button> </li>
+<li>  <button id="LogButton" onclick="myFunction()" > Log in</button> </li>
  
  
  </div>
@@ -39,11 +39,31 @@
     
     <li><input type="password" placeholder="Password" maxlength="32" required></li>
     
-    <li><input type="submit" value="Sign Up"></li>
+    <li><input type="submit" value="Log in" id="buttonlogin"></li>
     <li><a href="www.google.com.vn" id="forgot">Forgot password?</a></li>
     </div>
 
 </div>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("front").innerHTML = "Fotobook Login";
+  document.getElementById("div3").style.display = "block";
+  document.getElementById("div2").style.display = "none";
+  document.getElementById("buttonlogin").style.value="Login";
+
+}
+
+
+
+</script>
+
+
+
+
+
 
 
 </body>
