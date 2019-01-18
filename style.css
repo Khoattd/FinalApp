@@ -62,7 +62,7 @@ position: sticky;
 {
     
     position: relative;
-    left: 300px;
+   
     top: 50px;
  margin:0 auto;
  padding:0px;
@@ -71,21 +71,20 @@ position: sticky;
 }
 #wrapper  h1
 {
-   
-    padding-left: 60px;
+    
+  
+    
     color:#4c66a4;
- text-align: left;
+ text-align: center;
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 #wrapper #div2
 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+margin: 0 auto;
+   padding: 10px;
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- margin-top:10px;
+
  width:390px;
  text-align: left;
  border-style: groove;
