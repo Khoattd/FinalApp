@@ -117,7 +117,7 @@ position:relative;
  border-style: groove;
  border-radius: 25px;
  font-size: 13px;
- background: whitesmoke;
+ background: linear-gradient(white, whitesmoke);;
 }
 
 #wrapper #div2 p
