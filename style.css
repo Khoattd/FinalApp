@@ -24,21 +24,23 @@ body
 #header li
 {
  list-style-type:none;
- float:left;
+ 
  text-align:left;
  color:white;
- font-
+ display: inline;
 }
 
 #header  #sitename  a 
 {
+    float: left;
+position:relative;
  color:white;
  text-decoration:none;
  font-size:30px;
  font-weight:900;
- margin-top: 50%;
+ margin-top:10px;
  
- padding-top: 20px;
+ 
 }
 #header form
 {
