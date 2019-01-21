@@ -179,11 +179,12 @@ padding-right: 10px;
     
     color: lightblue;
 }
+
 #warpper li a #forgot
 {
     margin-left: 30px;
  font-size: 30px;
 }
+.Hide {display:none;}
 
-#div3 {display: none;}
-#div2{display: block;}
+

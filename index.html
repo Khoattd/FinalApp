@@ -2,6 +2,7 @@
 <head>
 <link href="style.css" type="text/css" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="jQuery.js"></script>
 </head>
 <body>
 
@@ -11,7 +12,7 @@
  <form action="post">
  <li><input id="searchbar" type="text" name="something" placeholder="Search Photo / Album"></li>
 </form>
-<li>  <button id="LogButton" onclick="myFunction()" > Log in</button> </li>
+<li>  <button id="LogButton"  > Log in</button> </li>
  
  
  </div>
@@ -19,7 +20,7 @@
 
 <div id="wrapper">
     <h1 id="front">Fotobook Signup </h1>
-<div id="div2">
+<div id="div2" >
       
     <p>First Name</p> 
 <li><input type="text" placeholder="First Name" maxlength="20" required></li>
@@ -31,7 +32,7 @@
 <li><input type="password" placeholder="Password confirmation" maxlength="32" required></li>
 <li><input type="submit" value="Sign Up"></li>
 </div>
-<div id="div3">
+<div id="div3" class="Hide">
     <li><i class="fa fa-gamepad" ></i></li>
     
      
@@ -48,13 +49,19 @@
 
 <script>
 
-function myFunction() {
-  document.getElementById("front").innerHTML = "Fotobook Login";
-  document.getElementById("div3").style.display = "block";
-  document.getElementById("div2").style.display = "none";
-  document.getElementById("buttonlogin").style.value="Login";
+    
+$( document ).ready(function() {
 
-}
+    $( "button" ).click(function( event ) {
+        $('#div3, #div2').toggleClass("Hide");
+
+    });
+
+/*
+function myFunction() {
+$('#div3, #div2').toggleClass("Hide");
+};*/
+});
 
 
 
