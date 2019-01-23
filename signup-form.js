@@ -47,7 +47,7 @@ $.validator.setDefaults( {
 } );
 
 $( document ).ready( function () {
-    $( "#signupForm" ).validate( {
+    $( "#signupForm, #loginForm" ).validate( {
         rules: {
             firstName: {
                 required: true,
@@ -69,7 +69,15 @@ $( document ).ready( function () {
                 required: true,
                 email: true
             },
-            agree: "required"
+            logEmail: {
+                required: true,},
+            logPassword: {
+                    required: true,
+                    minlength: 5
+                },
+                
+            
+            
         },
         messages: {
            
@@ -90,10 +98,13 @@ $( document ).ready( function () {
                 minlength: "Your password must be at least 5 characters long",
                 equalTo: "Please enter the same password as above"
             },
+            logEmail: {
+                required: "Please provide an Email",
+            }
             
         },
         errorPlacement: function ( error, element ) {
-            error.addClass( "ui red pointing label transition" );
+            error.addClass( "ui red pointing label testing" );
             error.insertAfter( element.parent() );
         },
         highlight: function ( element, errorClass, validClass ) {

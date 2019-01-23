@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    $( "button" ).contextmenu(function( event ) {
+    $( "button" ).click(function( event ) {
         $('#div3, #div2').toggleClass("Hide");
 
     });
