@@ -187,7 +187,12 @@ padding-right: 10px;
  font-size: 30px;
 }
 .Hide {display:none;}
-.testing {background-color: red;
-border: 3px solid red;}
+.testing {color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    font
+
+}
+
 
 

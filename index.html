@@ -2,6 +2,7 @@
 <head>
 <link href="style.css" type="text/css" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.1.4/semantic.min.css" />
 <script src="jQuery.js"></script>
 <script src="jquery.validate.js"></script>
 <script src="signup-form.js"></script>
@@ -25,16 +26,17 @@
     <h1 id="front">Fotobook Signup </h1>
 
 <div id="div2" >
-      
+ <form id="signupForm">  
     <p>First Name</p> 
-<li><input type="text" placeholder="First Name" minlength="2" required name="firstName"></li>
+<li><input type="text" placeholder="First Name"  name="firstName" id ="lastName"></li>
 <p>Last Name</p>
-<li><input type="text" placeholder="Last Name" minlength="2" required name="lastName"></li>
+<li><input type="text" placeholder="Last Name"   name="lastName" id="firstName"></li>
 <p>New Password</p>
-<li><input type="password" placeholder="New Password" maxlength="32" required name=></li>
+<li><input type="password" placeholder="New Password" id="password" name="password"></li>
 <p>Password confirmation</p>
-<li><input type="password" placeholder="Password confirmation" maxlength="32" required></li>
+<li><input type="password" placeholder="Password confirmation" id="passwordConfirmation" name="passwordConfirmation"></li>
 <li><input type="submit" value="Sign Up"></li>
+</form>
 </div>
 <div id="div3" class="Hide">
     <li><i class="fa fa-gamepad" ></i></li>
