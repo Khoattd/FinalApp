@@ -23,27 +23,28 @@ position: sticky;
 }
 #header li {
     list-style-type: none;
-    float: left;
+    
 
 
 }
 #sitename a {
     color: whitesmoke;
-    
+    float: left;
     text-decoration: none;
     font-weight: 900;
     font-size:20px;
     margin-left: 50px;
-    margin-top: -5px;
+    margin-top: 2px;
     
 
 }
 #header #searchbar {
-    width: 400px;
+    display:flex;
+    width: 30%;
     height: 23px;
     margin-left:50px;
     border:1px solid #BDBDBD;
-    
+    float: left;
 }
 #header #LogButton {
     background-color: transparent;
@@ -53,9 +54,9 @@ position: sticky;
     font-weight: bold;
     margin-top: 3px;
     position: absolute;
-    margin-left: 400px;
-    float: right;
     cursor: pointer;
+    margin-left: 18%;
+    float: right;
 }
 
 #wrapper
@@ -186,5 +187,7 @@ padding-right: 10px;
  font-size: 30px;
 }
 .Hide {display:none;}
+.testing {background-color: red;
+border: 3px solid red;}
 
 

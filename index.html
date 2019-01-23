@@ -3,13 +3,15 @@
 <link href="style.css" type="text/css" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="jQuery.js"></script>
+<script src="jquery.validate.js"></script>
+<script src="signup-form.js"></script>
 <script src="SourceCode.js"></script>
 </head>
 <body>
 
 <div id="header_wrapper">
  <div id="header">
- <li id="sitename"><a href="index.html" >Fotobook</a></li>
+ <li id="sitename"><a href="https://www.google.com.vn" >Fotobook</a></li>
  <form action="post">
  <li><input id="searchbar" type="text" name="something" placeholder="Search Photo / Album"></li>
 </form>
@@ -21,14 +23,15 @@
 
 <div id="wrapper">
     <h1 id="front">Fotobook Signup </h1>
+
 <div id="div2" >
       
     <p>First Name</p> 
-<li><input type="text" placeholder="First Name" maxlength="20" required></li>
+<li><input type="text" placeholder="First Name" minlength="2" required name="firstName"></li>
 <p>Last Name</p>
-<li><input type="text" placeholder="Last Name" maxlength="20" required></li>
+<li><input type="text" placeholder="Last Name" minlength="2" required name="lastName"></li>
 <p>New Password</p>
-<li><input type="password" placeholder="New Password" maxlength="32" required></li>
+<li><input type="password" placeholder="New Password" maxlength="32" required name=></li>
 <p>Password confirmation</p>
 <li><input type="password" placeholder="Password confirmation" maxlength="32" required></li>
 <li><input type="submit" value="Sign Up"></li>
@@ -36,7 +39,6 @@
 <div id="div3" class="Hide">
     <li><i class="fa fa-gamepad" ></i></li>
     
-     
     <li><input type="text" placeholder="email" maxlength="20" required></li>
     
     <li><input type="password" placeholder="Password" maxlength="32" required></li>
