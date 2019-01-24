@@ -1,45 +1,4 @@
-/*$().ready(function(){
-    $("#signupForm").validate(
-    rules: {
-        firstName: {
-            required: true,
-            minlength: 2},
-        firstName: {
-                required: true,
-                minlength: 2},
-        newPassword: {
-                required: true,
-                minlength: 8},
-        confirmPassword: {
-            required: true,
-            equalTo: "#newPassword"},
-    },
-    messages: {
-        firstName: {
-            required: "please enter your first name",
-            minlength: "this is not a name"
 
-        },
-        lastName: {
-            required: "please enter your last name",
-            minlength: "this is not a name"
-
-        },
-        newPassword: {
-            required: "please provide a password",
-            minlength: "minimum 8 word"
-
-        }, 
-        newPassword: {
-            required: "please provide a password",
-            equalTo: "Two pasword must match"
-
-        },
-
-    }
-    )
-    
-}) */
 $.validator.setDefaults( {
     submitHandler: function () {
         alert( "submitted!" );
@@ -47,7 +6,7 @@ $.validator.setDefaults( {
 } );
 
 $( document ).ready( function () {
-    $( "#signupForm, #loginForm" ).validate( {
+    $( "#signupForm" ).validate( {
         rules: {
             firstName: {
                 required: true,
