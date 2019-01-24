@@ -1,5 +1,26 @@
 <html>
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap core CSS -->
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="starter-template.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 <link href="style.css" type="text/css" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.1.4/semantic.min.css" />
@@ -11,51 +32,46 @@
 </head>
 <body>
 
+
 <div id="header_wrapper">
  <div id="header">
- <li id="sitename"><a href="https://www.google.com.vn" >Fotobook</a></li>
- <form action="post">
- <li><input id="searchbar" type="text" name="something" placeholder="Search Photo / Album"></li>
-</form>
-<li>  <button id="LogButton"  > Log in</button> </li>
- 
+     
+    <li id="sitename"><a href="https://www.google.com.vn" >Fotobook</a></li>
+    <form action="post">
+        <li><input id="searchbar" type="text" name="something" placeholder="Search Photo / Album"></li>
+    </form>
+    <li>  <button id="LogButton"  > Log in</button> </li>
  
  </div>
 </div>
 
-<div id="wrapper">
-    <h1 id="front">Fotobook Signup </h1>
-
-<div id="div2">
- <form id="signupForm">  
-    <p>First Name</p> 
-<li><input type="text" placeholder="First Name"  name="firstName" id ="lastName"></li>
-<p>Last Name</p>
-<li><input type="text" placeholder="Last Name"   name="lastName" id="firstName"></li>
-<p>New Password</p>
-<li><input type="password" placeholder="New Password" id="password" name="password"></li>
-<p>Password confirmation</p>
-<li><input type="password" placeholder="Password confirmation" id="passwordConfirmation" name="passwordConfirmation"></li>
-<li><input type="submit" value="Sign Up"></li>
-</form>
-</div>
-<div id="div3" class="Hide">
-    <form id="loginForm">
-    <li><i class="fa fa-gamepad" ></i></li>
-    
-    <li><input type="email" placeholder="email" name="logEmail" id="logEmail" ></li>
-    
-    <li><input type="password" placeholder="Password" name="logPassword" id="logPassword" ></li>
-    
-    <li><input type="submit" value="Log in" id="buttonlogin"></li>
-    <li><a href="www.google.com.vn" id="forgot">Forgot password?</a></li>
+    <div id="wrapper" >
+        <h1 id="front">Fotobook Signup </h1>
+        
+        <div id="div2">
+    <form id="signupForm">  
+        <p>First Name</p> 
+        <li><input type="text" placeholder="First Name"  name="firstName" id ="lastName"></li>
+        <p>Last Name</p>
+        <li><input type="text" placeholder="Last Name"   name="lastName" id="firstName"></li>
+        <p>New Password</p>
+        <li><input type="password" placeholder="New Password" id="password" name="password"></li>
+        <p>Password confirmation</p>
+        <li><input type="password" placeholder="Password confirmation" id="passwordConfirmation" name="passwordConfirmation"></li>
+        <li><input type="submit" value="Sign Up"></li>
     </form>
+        </div>
+
+        <div id="div3" class="Hide">
+    <form id="loginForm">
+        <li><i class="fa fa-gamepad" ></i></li>
+        <li><input type="email" placeholder="email" name="logEmail" id="logEmail" ></li>
+        <li><input type="password" placeholder="Password" name="logPassword" id="logPassword" ></li>
+        <li><input type="submit" value="Log in" id="buttonlogin"></li>
+        <li><a href="www.google.com.vn" id="forgot">Forgot password?</a></li>
+        </form>
+        </div>
     </div>
-
-
-</div>
-
-
 
 
 
