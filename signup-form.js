@@ -65,12 +65,10 @@ $( document ).ready( function () {
                 minlength: 5,
                 equalTo: "#password"
             },
-            email: {
-                required: true,
-                email: true
-            },
+          
             logEmail: {
-                required: true,},
+                required: true,
+                email: true},
             logPassword: {
                     required: true,
                     minlength: 5
@@ -100,7 +98,12 @@ $( document ).ready( function () {
             },
             logEmail: {
                 required: "Please provide an Email",
-            }
+                email: "Please insert a valid email"
+            },
+            logPassword: {
+                required: "Please insert your password",
+                minlength: "Minimum length is 5 letters"
+            },
             
         },
         errorPlacement: function ( error, element ) {
@@ -114,4 +117,6 @@ $( document ).ready( function () {
             $( element ).parents( ".row" ).removeClass( errorClass );
         }
     } );
+
+
 } );
