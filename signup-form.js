@@ -10,10 +10,12 @@ $( document ).ready( function () {
         rules: {
             firstName: {
                 required: true,
-                minlength: 2},
+                minlength: 2,
+                maxlength: 25},
          lastName: {
                     required: true,
-                    minlength: 2},
+                    minlength: 2,
+                    maxlength: 25},
          
             password: {
                 required: true,
@@ -25,9 +27,11 @@ $( document ).ready( function () {
                 equalTo: "#password"
             },
           
-            logEmail: {
+            signupEmail: {
                 required: true,
+                maxlength: 255,
                 email: true},
+                
             logPassword: {
                     required: true,
                     minlength: 5
