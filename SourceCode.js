@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    $( "button" ).click(function( event ) {
+    $( "#LogButton" ).click(function( event ) {
         $('#div3, #div2, .front').toggleClass("Hide");
 
     });
