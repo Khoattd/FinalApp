@@ -1,8 +1,8 @@
 $( document ).ready(function() {
-
+    $('.datepicker').datepicker();
     $( "#LogButton" ).click(function( event ) {
         $('#div3, #div2, .front').toggleClass("Hide");
-
+        
     });
  
 
