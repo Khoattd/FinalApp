@@ -4,9 +4,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootstrap core CSS -->
-<link href="./dist/css/bootstrap.min.css" rel="stylesheet">
-
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -20,10 +20,10 @@
 <script src="jquery.validate.js"></script>
 <script src="signup-form.js"></script>
 <script src="login-form.js"></script>
-<script src="SourceCode.js"></script>
+<!--<script src="SourceCode.js"></script>-->
 </head>
 <body>
-
+ 
 
 <div id="header_wrapper">
  <div class="container">
@@ -82,7 +82,7 @@
     
         <h1 class="front Hide " >Fotobook Login </h1>
         
-        <div id="div2">
+        <div id="div2" >
             <div class="form-group"></div>
 
     <form id="signupForm" >  
@@ -97,7 +97,7 @@
         <li><input type="password" placeholder="New Password" id="password" name="password"></li>
         <p>Password confirmation</p>
         <li><input type="password" placeholder="Password confirmation" id="passwordConfirmation" name="passwordConfirmation"></li>
-        <li><input type="submit" value="Sign Up"></li>
+        <li><input type="submit" data-toggle="modal" data-target="#myModal" value="Sign Up"></li>
         <!--<button class="btn btn-primary center-block" type="submit">-->
     
     </form>
@@ -108,7 +108,29 @@
 </div>
 </div>
 </div>
- 
+
+<!-- Button trigger modal -->
+<div class="container">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">SIGNUP AGREEMENT</h4>
+      </div>
+      <div class="modal-body">
+        
+        <p> <a href="https:www.google.com.vn">Lincenses and term</a></p>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
 
 </body>
 </html>

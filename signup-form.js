@@ -1,9 +1,11 @@
 
+
 $.validator.setDefaults( {
     submitHandler: function () {
         alert( "submitted!" );
     }
 } );
+
 
 $( document ).ready( function () {
     $( "#signupForm" ).validate( {
@@ -83,3 +85,4 @@ $( document ).ready( function () {
 
 
 } );
+
