@@ -8,7 +8,7 @@ $.validator.setDefaults( {
 
 
 $( document ).ready( function () {
-    $( "#signupForm" ).validate( {
+    $( "#signupForm, .modalForm" ).validate( {
         rules: {
             firstName: {
                 required: true,
@@ -38,6 +38,9 @@ $( document ).ready( function () {
                     required: true,
                     minlength: 5
                 },
+            modalCheckbox: {
+                required: true,
+            }
                 
             
             
