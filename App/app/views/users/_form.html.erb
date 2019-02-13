@@ -1,0 +1,40 @@
+<%= form_with scope: :user, url: users_path, local: true do |form| %>
+    <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@user.errors.count, "error") %> prohibited <br>
+        You need to create a legit account
+      </h2>
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <p>
+      <%= form.label :FirstName %><br>
+      <%= form.text_field :first_name %>
+    </p>
+    <p>
+    <%= form.label :LastName %><br>
+    <%= form.text_field :last_name %>
+  </p>
+  <p>
+  <%= form.label :Email %><br>
+  <%= form.text_field :email %>
+</p> 
+
+    <p>
+      <%= form.label :Password %><br>
+      <%= form.text_area :password %>
+    </p>
+    <p>
+    <%= form.label :Password_Confirmation %><br>
+    <%= form.text_area :password_confirmation %>
+  </p>
+   
+    <p>
+      <%= form.submit %>
+      </p>
+    <% end %>
